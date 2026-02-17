@@ -2,7 +2,6 @@
 % ------------------------------------------------------------
 % Universidad de Cuenca
 %
-% Purpose (paper-aligned workflow):
 %   This script reproduces the numerical pipeline described in the article:
 %   (1) Define geometry and Dirichlet boundary conditions:
 %       - Outer grounded contour (V = V0) and/or conductor equipotentials (V = Vm)
@@ -21,8 +20,7 @@
 %       (paper: Eq. \eqref{eq:E_def}, Eq. \eqref{eq:Ex_disc}--\eqref{eq:Ey_disc})
 %   (5) Plot V maps, equipotentials, and E visualizations.
 %
-% Open-code use and modifications are permitted, provided that the
-% scientific article documenting this tool is properly cited.
+% Note: Open-code use and modifications are permitted, provided that the scientific article documenting this tool is properly cited.
 % ------------------------------------------------------------
 
 clear; clc; close all;
@@ -505,4 +503,5 @@ function cmap = getCmap()
     else
         cmap = parula;
     end
+
 end
